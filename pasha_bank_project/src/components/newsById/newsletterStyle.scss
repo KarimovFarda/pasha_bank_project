@@ -1,0 +1,247 @@
+.block {
+    height: 100px;
+  }
+  .gray-bg {
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .jumbotron {
+    margin-top: 20px;
+  }
+  .image {
+        height: 27rem;
+    margin: 20px 0;
+  }
+  .fork {
+    position: absolute;
+    right: -70px;
+    top: 45px;
+    transform: rotate(45deg);
+  }
+  .news-content-area{
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      font-weight: 500;
+  }
+  .fork a.fork-me-on-github {
+    display: block;
+    background: #f00;
+    color: #fff;
+    padding: 10px 70px;
+    border: 4px solid #f66;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 250ms;
+  }
+  .fork a.fork-me-on-github:hover {
+    background: #b00;
+    border-color: #b66;
+  }
+  .fa-plus-circle{
+    position: absolute;
+    top:11%;
+    right:1%;
+    font-size:2.5rem;
+    color:#EA5A41
+  }
+
+.header-banner {
+    background-color: #333;
+    background-image: url('https://37.media.tumblr.com/8b4969985e84b2aa1ac8d3449475f1af/tumblr_n3iftvUesn1snvqtdo1_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+header h2 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 5rem; 
+    left: 2rem;
+    width:40%;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
+
+/* demo content */
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{ 
+    margin: 0 auto;
+    padding: 3rem 0;
+    width: 75%;
+    max-width: 100%;
+}
+.article-content {
+    float: left;
+    width: 70%;
+}
+.article-content p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 25%;
+    z-index:0;
+}
+p img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    .article-content {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    .article-content:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Comments */ 
+
+.detailBox {
+    width:100%;
+    border:1px solid #bbb;
+    margin:5px;
+}
+.detailBox p{
+    text-align: left;
+}
+.titleBox {
+    background-color:#fdfdfd;
+    padding:10px;
+}
+.titleBox label{
+  color:#444;
+  margin:0;
+  display:inline-block;
+}
+
+.commentBox {
+    padding:10px;
+    border-top:1px dotted #bbb;
+}
+.commentBox .form-group:first-child, .actionBox .form-group:first-child {
+    width:80%;
+}
+.commentBox .form-group:nth-child(2), .actionBox .form-group:nth-child(2) {
+    width:18%;
+}
+.actionBox .form-group * {
+    width:100%;
+}
+.taskDescription {
+    margin-top:10px 0;
+}
+.commentList {
+    padding:0;
+    list-style:none;
+    // max-height:200px;
+    // overflow:auto;
+}
+.commentList li {
+    margin:0;
+    margin-top:10px;
+}
+.commentList li > div {
+    display:table-cell;
+}
+.commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.commentText p {
+    margin:0;
+}
+.sub-text {
+    color:#aaa;
+    font-family:verdana;
+    font-size:11px;
+}
+.actionBox {
+    border-top:1px dotted #bbb;
+    padding:10px;
+}
+.add-comment{
+    margin-top: 2rem;
+}
+
+.subscription-details{
+    background-color:#EA5A41;
+    padding: 10px 1.5rem;
+    border-radius: 1rem
+}
+.subscription-details:hover{
+    background-color:#EA5A41;
+}
+.remained-text{font-weight: 500}
+.color-orange{
+    color:#EA5A41
+}
