@@ -27,20 +27,6 @@ AuthRouter.post("/register", async (req, res: Response) => {
     const newUser = await newUserObj.save();
 
 
-       
-var transporter = nodemailer.createTransport({
-  service : "gmail",
-  auth : {
-  user : "fardask@code.edu.az",
-  pass : "314159265zZ."
-  }
-  });
-  var mailOptions = {
-  from : "fardask@code.edu.az",
-  to : "ferdakerim@gmail.com",
-  subject : "Sending Mail",
-  text : "Hi",
-  }
 
     res.status(201).json({
       _id: newUser._id,
